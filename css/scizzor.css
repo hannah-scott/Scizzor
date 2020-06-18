@@ -1,9 +1,24 @@
-@font-face { font-family: 'open-sans-regular'; src: url("../media/fonts/open-sans-regular.ttf") format('truetype'); }
-
+@font-face { font-family: 'open-sans-bold'; src: url("../media/fonts/open-sans-bold.ttf") format('truetype'); }
 
 body {
-    font-family: "open-sans-regular", sans-serif;
+    font-family: "open-sans-bold", sans-serif;
+    text-align:center;
 }
+
 button {
-    font-family: "open-sans-regular", sans-serif;
+    font-family: inherit;
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+img {
+    width: max-width;
+    max-width: 100%;
 }
+

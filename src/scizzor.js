@@ -36,7 +36,7 @@ function previousPage(id) {
 function setPage(id) {
     currentPage = id;
     document.getElementById("currentPage").setAttribute("src", getPagePath(pages[currentPage]));
-    document.getElementById("pageNum").innerHTML = "Page number: " + (currentPage + 1) + " / " + pages.length;
+    document.getElementById("pageNum").innerHTML = (currentPage + 1) + " / " + pages.length;
 }
 
 setup();

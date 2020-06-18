@@ -8,12 +8,17 @@
 </head>
 <body>
     <div class="page">
-        <img src="" alt="" id="currentPage" />
-        <span id="pageNum"></span>
+        <div class="pageImg">
+            <img src="" alt="" id="currentPage" />
+        </div>
+        <div id="pageNum"></div>
     </div>
+
+    <br />
+    
     <div class="controls">
-        <button id="btnBack" onclick="previousPage(currentPage);">back.</button>
-        <button id="btnForward" onclick="nextPage(currentPage);">forward.</button>
+        <button id="btnBack" onclick="previousPage(currentPage);"><</button>
+        <button id="btnForward" onclick="nextPage(currentPage);">></button>
     </div>
 
     <script src="src/scizzor.js"></script>
