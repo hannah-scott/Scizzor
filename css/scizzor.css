@@ -3,13 +3,16 @@
 body {
     font-family: "open-sans-bold", sans-serif;
     text-align:center;
+    color: #2C0E37;
+    background-color: #FBFAF8;
+    
 }
 
 button {
     font-family: inherit;
-    background-color: black; /* Green */
+    background-color: #2C0E37; /* Green */
     border: none;
-    color: white;
+    color: #FBFAF8;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
