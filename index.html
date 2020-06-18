@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sizor.css">
+    <title>sizor</title>
+</head>
+<body>
+    <div class="page">
+        <img src="" alt="" id="currentPage" />
+        <span id="pageNum"></span>
+    </div>
+    <div class="controls">
+        <button id="btnBack" onclick="previousPage(currentPage);">back.</button>
+        <button id="btnForward" onclick="nextPage(currentPage);">forward.</button>
+    </div>
+
+    <script>
+        var currentPage = 0;
+        var pages = [
+            "FRONT", 
+            "INNERFRONT",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "BACK"
+        ];
+
+        function getPagePath(page) {
+            return "panels/" + page + ".png";
+        }
+
+        function setup() {
+            console.log("Current page: ", currentPage)
+            setPage(currentPage);
+        }
+
+        function nextPage(id) {
+            if (id < pages.length - 1) {
+                console.log(id);
+                setPage(id + 1);
+            }
+        }
+
+        function previousPage(id) {
+            if (id > 0){
+                console.log(id);
+                setPage(id - 1);
+            }
+        }
+
+        function setPage(id) {
+            currentPage = id;
+            document.getElementById("currentPage").setAttribute("src", getPagePath(pages[currentPage]));
+            document.getElementById("pageNum").innerHTML = "Page number: " + (currentPage + 1) + " / " + pages.length;
+        }
+
+        setup();
+    </script>
+</body>
+</html>
