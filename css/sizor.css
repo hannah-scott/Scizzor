@@ -1,9 +1,0 @@
-@font-face { font-family: 'open-sans-regular'; src: url("../media/fonts/open-sans-regular.ttf") format('truetype'); }
-
-
-body {
-    font-family: "open-sans-regular", sans-serif;
-}
-button {
-    font-family: "open-sans-regular", sans-serif;
-}
