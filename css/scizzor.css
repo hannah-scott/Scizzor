@@ -1,7 +1,5 @@
-@font-face { font-family: 'open-sans-bold'; src: url("../media/fonts/open-sans-bold.ttf") format('truetype'); }
-
 body {
-    font-family: "open-sans-bold", sans-serif;
+    font-family: sans-serif;
     text-align:center;
     color: #2C0E37;
     background-color: #FBFAF8;
@@ -10,10 +8,10 @@ body {
 
 button {
     font-family: inherit;
-    background-color: #2C0E37; 
-    border: none;
-    color: #FBFAF8;
+    border: 1px solid black;
     padding: 15px 32px;
+	background-color: inherit;
+	color: inherit;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -21,6 +19,7 @@ button {
 }
 
 img {
+    padding: 5%;
     width: max-width;
     max-width: 100%;
 }
