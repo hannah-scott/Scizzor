@@ -3,7 +3,7 @@ body {
     text-align:center;
     color: #2C0E37;
     background-color: #FBFAF8;
-    
+	font-size:16px;    
 }
 
 button {
@@ -12,14 +12,12 @@ button {
     padding: 15px 32px;
 	background-color: inherit;
 	color: inherit;
-    text-align: center;
-    text-decoration: none;
+    text-align: inherit;
     display: inline-block;
-    font-size: 16px;
 }
 
 img {
-    padding: 5%;
+	padding: 16px;
     width: max-width;
     max-width: 100%;
 }
